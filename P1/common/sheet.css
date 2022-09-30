@@ -1,0 +1,70 @@
+
+
+@font-face {
+  font-family: Whyte;
+  src: url(bad.woff2);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Diatype;
+  src: url(ABCDiatypeSemi-MonoVariableEdu.woff2);
+
+}
+
+
+h1 {
+	font-family: Whyte, arial;
+	color: black;
+	font-size: 150px;
+	line-height: 120px;
+	letter-spacing: -8px;
+}
+
+
+h2 {
+	font-family: diatype, mono;
+	text-align:  justify;
+	text-indent: 0px;
+	color: red;
+	font-size: 35px;
+	line-height: 40px;
+	font-weight: 300;
+	width: 512px;
+  height: auto;
+  display:  grid;
+	padding: 0px;
+}
+
+
+a {
+	font-family: diatype;
+	color: black;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+h2:hover {
+	font-weight: 700;
+	color: red;
+	letter-spacing: 0px;
+}
+
+
+img{
+   display: none
+}
+
+span1:hover + img{
+   display: block;
+   transform: scale(1);
+   margin: 0 auto;
+
+}
+
+span:hover + img{
+   display: block;
+   transform: scale(1);
+   margin: 0 auto;
+
+}
