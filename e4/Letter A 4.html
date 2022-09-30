@@ -1,0 +1,76 @@
+<!DOCTYPE html><!--document type declaration-->
+<html>
+    <head>
+            <title>CSS Transform Letterform Test</title>
+            <style>
+
+
+                .myshape {
+
+                    width: 120px;
+                    height: 500px;
+                    background-color: yellow;
+                    transform: skew(20deg);
+                    border-radius: 100%;
+                    transform-origin: top left;
+                    margin: 00px auto;
+                    mix-blend-mode: multiply;
+                }
+
+                .myshape2 {
+
+                    width: 120px;
+                    height: 500px;
+                    background-color: magenta;
+                    transform: skew(-20deg);
+                    border-radius: 100%;
+                    transform-origin: top right;
+
+                    margin: -500px auto;
+                    mix-blend-mode: multiply;
+                    /*outline: 10px inset blue;
+                    outline-offset: -10px;*/
+                }
+
+                .myshape3 {
+
+                    
+                }
+
+.myshape3:hover {
+  
+}
+
+.myshape2:hover {
+    mix-blend-mode: difference;
+    background-color: yellow;
+    border-radius: 100%;
+    transform: skew(-20deg);
+    transform-origin: center;
+    margin: -500px auto;
+    mix-blend-mode: multiply;
+    transition: all 1s ease-in-out;
+}
+
+.myshape:hover {
+    mix-blend-mode: difference;
+    background-color: cyan;
+    border-radius: 100%;
+    transform: skew(20deg);
+    transform-origin: center;
+    margin: 00px auto;
+    mix-blend-mode: multiply;
+    transition: all 1s ease-in-out;
+}
+}
+
+
+
+            </style>
+    </head>
+    <body>
+        <div class="myshape"></div> 
+        <div class="myshape2"></div>
+        <div class="myshape3"></div>
+    </body>
+</html>
