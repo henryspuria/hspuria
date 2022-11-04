@@ -1,0 +1,151 @@
+@font-face {
+  font-family: Whyte;
+  src: url(bad.woff2);
+  font-weight: 600;
+}
+
+@font-face {
+	font-family: inktrap;
+	src: url(ABCWhytePlusVariableEdu.woff2);
+}
+
+@font-face {
+  font-family: Diatype;
+  src: url(ABCDiatypeSemi-MonoVariableEdu.woff2);
+
+}
+
+
+
+h1 {
+	color: #fff;
+	font-size: calc(1.5rem + 5vw);
+	letter-spacing: 5px;
+	animation-name: change;
+	animation-duration: 1s;
+	animation-direction: alternate;
+	animation-iteration-count:  infinite;
+}
+
+@keyframes change {
+	0% {
+		font-variation-settings: "wght" 300, "ital" 5, "opsz" 0;
+		letter-spacing: -15px;
+	}
+
+	50% {
+		font-variation-settings:  "wght" 450, "ital" 0, "opsz" 2.5;
+	}
+
+	100% {
+		font-variation-settings: "wght" 600, "ital" 10, "opsz" 5;
+	}
+}
+
+
+
+
+h2 {
+	font-family: diatype, mono;
+	text-align: right;
+	padding-right: 50px;
+	color: blue;
+	font-size: 50px;
+	text-indent: 50px;
+	line-height: 1px;
+	font-weight: 400;
+	padding: 0px;
+
+}
+
+p {
+	font-family: inktrap;
+/*	height: 1vh;*/
+	line-height: 0px;
+	font-size: 200px;
+	display: flex;
+	color: #000000;
+	text-indent: 70px;
+	justify-content: left;
+	align-items: left;
+/*  overflow: hidden;*/
+	font-weight: 700;
+	letter-spacing: -10px;
+	transform: translateY(25vh);
+
+	animation-name: change;
+	animation-duration: .5s;
+	transition: all 1s cubic-bezier(0,.63,.51,1.05);
+	animation-direction: alternate;
+	animation-iteration-count:  infinite;
+}
+}
+
+p:hover {
+	mix-blend-mode: exclusion;
+}
+
+
+
+.path {
+  stroke-width: 71.1;
+  stroke-dasharray: 11500;
+  stroke-dashoffset: 0;
+  animation: dash 1s linear alternate infinite;
+  display: flex;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+.path2 {
+  stroke-dasharray: 8925;
+  stroke-dashoffset: 0;
+  animation: dash2 8s ease alternate;
+  opacity: 100%;
+  display: flex;
+/*	transform: translateY(-50vh);*/
+  
+  
+
+}
+
+@keyframes dash2 {
+
+
+  0% {
+/*     transform: translateX(-150px) translateY(95vh) rotate(-11deg); */
+   	opacity: 100%;
+    stroke-dasharray: -100;
+    stroke-dashoffset: 11500;
+  } 
+   
+  30% {
+   	opacity: 100%;
+    transform: translateX(-0px) translateY(0vh) rotate(0deg);
+    stroke-dasharray: 11500;
+    stroke-dashoffset: 00;
+  }
+  100% {
+   	opacity: 100%;
+    stroke-dasharray: 8925;
+    stroke-dashoffset: 00;
+  }
+}
+
+
+
+.path2:hover {
+  stroke-dasharray: 11500;
+  transition: all 1s ease;
+  stroke-width: 30;
+  mix-blend-mode: ;
+  transition: all 3s ease;
+}
