@@ -1,0 +1,138 @@
+.container-main {
+  max-width: 50%;
+  width: 50%;
+  transform: translateY(100vh);
+  float: left;
+  height: 100vh;
+  top: 0;
+  overflow-y: scroll; 
+  overflow-block: scroll;
+}
+
+@font-face {
+  font-family: ABCCamera;
+  src: url(./common/PPRightGrotesk-WideFine.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: PPText;
+  src: url(./common/PPRightGroteskText-Regular.ttf);
+}
+
+@font-face {
+  font-family: SFMono;
+  src: url(./common/SF-Mono-Medium.otf);
+}
+
+@font-face {
+  font-family: PPText2;
+  src: url(./common/PPRightGroteskText-CompactLight.ttf);
+}
+
+
+h1 {
+	font-family: SFMono, arial;
+	color: white;
+  text-align: center;
+  padding: 20px;
+	font-size: 20px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 50vw;
+	letter-spacing: px;
+  /* transform: translateY(100vh); */
+  line-height: 1PX;
+}
+
+h2 {
+	font-family: SFMono, arial;
+	color: white;
+  text-align: center;
+  padding: 20px;
+	font-size: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50vw;
+	letter-spacing: px;
+  /* transform: translateY(100vh); */
+  line-height: 1PX;
+}
+
+p {
+	font-family: PPtext, arial;
+	text-align: left;
+	text-indent: 40px;
+  letter-spacing: -3px;
+	color: white;
+	font-size: 50px;
+  padding: 10px;
+	line-height: 48px;
+ 
+  
+}
+
+.myThreeJsCanvas {
+  position: absolute;
+  top: -300px;
+}
+
+
+
+
+
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: black;
+  color: #ffffff;
+  font-family: SFMono;
+  cursor:pointer;
+  font-size: 20px;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border-right: 2px;
+  border-top: 2px;
+  border-left: 2px;
+  border-color: white;
+  outline: 0px;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  letter-spacing: 3px;
+  
+}
+
+.accordion:after {
+  content: '\2199';
+  color: white;
+  font-family: sfmono;
+  font-weight: bold;
+  font-size: 20px;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2197"; /* Unicode character for "minus" sign (-) */
+  color: white;
+  font-family: sfmono;
+  font-weight: bold;
+  font-size: 20px;
+  float: right;
+  margin-left: 5px;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  display: none;
+  overflow: scroll;
+  overflow-y: scroll;
+}
