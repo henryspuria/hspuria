@@ -87,7 +87,7 @@ nav {
 
 .menu {
   position: fixed;
-  height: 60vh;
+  height: 70vh;
   width: 400px;
   border-radius: 30px;
   background-color:lightgray;
@@ -105,7 +105,7 @@ nav {
 }
 
 .menu.open {
-  transform: translateX(-100px) translateY(50vh);
+  transform: translateX(-100px) translateY(45vh);
   mix-blend-mode: normal;
   background-color: white;
   filter: drop-shadow(0 10px 0.75rem darkgray);
